@@ -3,7 +3,30 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-st.title('Uber pickups in NYC')
+
+
+st.title('10 Cool Beginner Python Tricks That Will Make Your Life Easier')
+
+image = Image.open('imagen.jpeg')
+st.image(image, caption='Photo by Miesha Maiden from Pexels')
+
+st.markdown('The compactness of Python can make a developer’s life a lot easier when writing lines and lines of code. But there are some lesser-known Python tricks that can surprise you with their amazing capabilities.'+
+'In today’s article, I will discuss 10 Python tips and tricks that will be really helpful for beginners to write more compact code. Knowing these tips and tricks will definitely save you some valuable time.')
+
+st.subheader('1. Walrus operator')
+
+st.markdown('The **Walrus or :=** operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
+
+
+if st.button('Example'):
+     st.write('Mylist = [1,2,3]' + 
+               'if(l := len(mylist) > 2)' +
+                'print(l)')
+else:
+     st.write('Goodbye')
+
+
+st.title('Ejemplo de uso de datos')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
@@ -35,17 +58,3 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
-
-st.title('10 Cool Beginner Python Tricks That Will Make Your Life Easier')
-
-image = Image.open('imagen.jpeg')
-st.image(image, caption='Photo by Miesha Maiden from Pexels')
-
-st.markdown('The compactness of Python can make a developer’s life a lot easier when writing lines and lines of code. But there are some lesser-known Python tricks that can surprise you with their amazing capabilities.'+
-'In today’s article, I will discuss 10 Python tips and tricks that will be really helpful for beginners to write more compact code. Knowing these tips and tricks will definitely save you some valuable time.')
-
-st.subheader('1. Walrus operator')
-
-st.markdown('The **Walrus or :=** operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.')
-
-
