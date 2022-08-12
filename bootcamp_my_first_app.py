@@ -19,7 +19,7 @@ st.markdown('The **Walrus or :=** operator is one of the latest additions to pyt
 
 
 if st.button('Example'):
-     st.write('Mylist = [1,2,3]' + 
+    st.text_area('Mylist = [1,2,3]' + 
                'if(l := len(mylist) > 2)' +
                 'print(l)')
 else:
