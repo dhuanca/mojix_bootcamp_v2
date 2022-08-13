@@ -85,3 +85,14 @@ Siguiente parrafo
 a)
 b)
 '''
+
+
+st.caption('This is a string that explains something above.')
+
+
+code = '''def hello():
+              print("Hello, Streamlit!")
+          hello()
+     
+     '''
+st.code(code, language='python')
