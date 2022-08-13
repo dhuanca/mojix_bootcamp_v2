@@ -19,12 +19,12 @@ st.markdown('The **Walrus or :=** operator is one of the latest additions to pyt
 
 
 if st.button('Example'):
-    st.markdown('~~~'+
-                'Mylist = [1,2,3]' + 
-               'if(l := len(mylist) > 2)' +
-                'print(l)'+
-                '~~~'
-                )
+    code = '''
+    def hello():
+        print("Hello, Streamlit!")
+    hello() '''
+
+    st.code(code, language='python')
 else:
      st.write('Goodbye')
 
