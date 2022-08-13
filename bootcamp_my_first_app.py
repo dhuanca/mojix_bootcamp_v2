@@ -20,9 +20,9 @@ st.markdown('The **Walrus or :=** operator is one of the latest additions to pyt
 
 if st.button('Example'):
     code = '''
-    def hello():
-        print("Hello, Streamlit!")
-    hello() '''
+def hello():
+    print("Hello, Streamlit!")
+hello() '''
 
     st.code(code, language='python')
 else:
