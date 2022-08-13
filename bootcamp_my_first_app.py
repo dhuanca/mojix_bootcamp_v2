@@ -134,8 +134,13 @@ st.code(code, language='python')
 
 st.subheader('Output')
 
-string = 'hello world'
-st.write(string.split())
+
+code = '''
+[‘hello’, ‘world’]
+ '''
+st.code(code, language='python')
+
+
 
 
 
