@@ -164,3 +164,24 @@ annotation_layer = (
 
 # Display both charts together
 st.altair_chart((chart + annotation_layer).interactive(), use_container_width=True)
+
+
+Example
+
+code = '''
+string = “hello world”
+string.split()
+ '''
+st.code(code, language='python')
+
+Output
+
+string = 'hello world'
+string.split()
+
+
+
+
+
+
+
