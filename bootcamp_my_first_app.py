@@ -123,8 +123,12 @@ col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 
-st.subheader('Example')
+st.header('2. Splitting a string')
 
+st.markdown('If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!')
+
+
+st.subheader('Example')
 
 code = '''
 string = “hello world”
@@ -133,7 +137,6 @@ string.split()
 st.code(code, language='python')
 
 st.subheader('Output')
-
 
 code = '''
 [‘hello’, ‘world’]
