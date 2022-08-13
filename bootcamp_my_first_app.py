@@ -123,7 +123,8 @@ col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 
-Example
+st.subheader('Example')
+
 
 code = '''
 string = “hello world”
@@ -131,7 +132,7 @@ string.split()
  '''
 st.code(code, language='python')
 
-Output
+st.subheader('Output')
 
 string = 'hello world'
 string.split()
