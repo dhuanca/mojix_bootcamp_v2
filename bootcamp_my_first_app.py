@@ -123,26 +123,27 @@ col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 
-st.header('2. Splitting a string')
-
-st.markdown('If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!')
-
-
-st.subheader('Example')
-
-code = '''
+# 1 walrus operator
+header_text = '2. Splitting a string'
+mar_text = 'If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!'
+code_text = '''
 string = “hello world”
 string.split()
- '''
-st.code(code, language='python')
-
-st.subheader('Output')
-
-code = '''
+ ''' 
+code_text_output = '''
 [‘hello’, ‘world’]
- '''
-st.code(code, language='python')
+ '''  
+def imprime_texto(header_text, mar_text, code_text, code_text_output):
+    st.header(header_text)
+    st.markdown(mar_text)
+    st.subheader('Example')
+    code = code_text
+    st.code(code, language='python')
+    st.subheader('Output')
+    code = code_text_output
+    st.code(code, language='python')
 
+imprime_texto(header_text, mar_text, code_text, code_text_output)
 
 
 
