@@ -1,0 +1,2 @@
+header_text;mar_text;code_text;code_text_output
+2. Splitting a string;If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!;''string = ?hello world? \nstring.split()'';''[?hello?, ?world?]''
