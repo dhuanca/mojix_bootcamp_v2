@@ -126,11 +126,9 @@ col3.metric("Humidity", "86%", "4%")
 # 1 walrus operator
 header_text = '2. Splitting a string'
 mar_text = 'If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!'
-code_text = '''string = “hello world” \nstring.split()
- ''' 
-code_text_output = '''
-[‘hello’, ‘world’]
- '''  
+code_text = '''string = “hello world” \nstring.split()''' 
+code_text_output = '''[‘hello’, ‘world’]'''  
+
 def imprime_texto(header_text, mar_text, code_text, code_text_output):
     st.header(header_text)
     st.markdown(mar_text)
