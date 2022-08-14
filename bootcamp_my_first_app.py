@@ -108,13 +108,13 @@ st.header('Conclusion')
 
 st.markdown('These were a few amazing Python tips and tricks which will make your work a lot easier while coding. There are many more shortcuts like these that you can explore from the official documentation or any other website.')
 
-st.markdown('Note: This article contains an affiliate link. This means that if you click on it and choose to buy the resource I linked above, a small portion of your subscription fee will go to me.')
+st.markdown('**Note:** This article contains an affiliate link. This means that if you click on it and choose to buy the resource I linked above, a small portion of your subscription fee will go to me.')
 
 st.markdown('However, the recommended resource is experienced by me and helped me in my data science career journey.')
 
 st.markdown('Before you go…')
 
-st.markdown('If you liked this article and want to stay tuned with more exciting articles on Python & Data Science — do consider becoming a medium member by clicking here https://pranjalai.medium.com/membership.')
+st.markdown('If you liked this article and want to **stay tuned** with more **exciting** articles on **Python & Data Science** — do consider becoming a medium member by clicking here https://pranjalai.medium.com/membership.')
 
 st.markdown('Please do consider signing up using my referral link. In this way, the portion of the membership fee goes to me, which motivates me to write more exciting stuff on Python and Data Science.')
 
