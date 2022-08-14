@@ -65,6 +65,17 @@ code_text = '''colour = [“red”, “yellow”, “green”] \nfruits = [‘ap
 code_text_output = '''red apple \nyellow banana \ngreen mango'''  
 imprime_texto(header_text, mar_text, code_text, code_text_output)
 
+st.markdown('The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.')
+st.subheader('Example')
+
+code = '''students = [“Rajesh”, “kumar”, “Kriti”] \nmarks = [87, 90, 88] \ndictionary = dict(zip(students, marks)) \nprint(dictionary)'''
+st.code(code, language='python')
+
+st.subheader('Output')
+
+code = '''{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}'''
+st.code(code, language='python')
+
 # 6. Assigning multiple list values to a variable
 header_text = '6. Assigning multiple list values to a variable'
 mar_text = 'If you want to assign some specific values of a list to a variable and all the remaining values to another variable in a list format, you can use the following technique:'
