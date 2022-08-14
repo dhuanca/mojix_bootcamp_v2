@@ -72,13 +72,51 @@ code_text = '''mylist = [1,2,3,4,5] \na,*b = mylist \nprint(f”a =”,a) \nprin
 code_text_output = '''a = 1 \nb = [2, 3, 4, 5]'''  
 imprime_texto(header_text, mar_text, code_text, code_text_output)
 
+# 7. Remove duplicate list items
+header_text = '7. Remove duplicate list items'
+mar_text = 'Do you have duplicate items in your list which you want to remove? You can do that with only one line of code using the set() function.'
+code_text = '''mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9] \nnewlist = set(mylist) \nprint(newlist)''' 
+code_text_output = '''{1, 2, 3, 4, 5, 6, 7, 8, 9}'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
+
+# 8. Lambda function
+header_text = '8. Lambda function'
+mar_text = 'If you need a function that is not very complicated, it can be done easily in one line using lambda. They are also called anonymous functions and are used heavily in data science and web development.'
+code_text = '''mul = lambda a,b: a*b \nmul(5,6)''' 
+code_text_output = '''30'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
 
 
+# 9. Swapping variable value
+header_text = '9. Swapping variable value'
+mar_text = 'One of the first programs that we learn while learning about variables is swapping the values of two variables. In python you can achieve that with one line of code:'
+code_text = '''a = 100 \nb = 200 \na,b = b,a \nprint(f’a = ‘,a) \nprint(f’b = ‘,b)''' 
+code_text_output = '''a = 200 \nb = 100'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
 
 
+# 10. Use a password in your code
+header_text = '10. Use a password in your code'
+mar_text = 'This python trick is amazing for securing your code with a password. We will use the getpass() function from the library getpass which encodes your input. This will prevent anyone from running the code without a password. Isn’t that cool!'
+code_text = '''from getpass import getpass \npassword = getpass(“password: “) \nif password == “abcd”: \n    print(“welcome strnger!”) \nelse: \n    print(“wrong password”)''' 
+code_text_output = '''password: **** [abcd] \nWelcome stranger! \nPassword: **** [abdc] \nWrong password '''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
 
+st.markdown('Here is a book on Python programming that I would definitely recommend for all beginners.')
 
+st.header('Conclusion')
 
+st.markdown('These were a few amazing Python tips and tricks which will make your work a lot easier while coding. There are many more shortcuts like these that you can explore from the official documentation or any other website.')
 
+st.markdown('Note: This article contains an affiliate link. This means that if you click on it and choose to buy the resource I linked above, a small portion of your subscription fee will go to me.')
 
+st.markdown('However, the recommended resource is experienced by me and helped me in my data science career journey.')
+
+st.markdown('Before you go…')
+
+st.markdown('If you liked this article and want to stay tuned with more exciting articles on Python & Data Science — do consider becoming a medium member by clicking here https://pranjalai.medium.com/membership.')
+
+st.markdown('Please do consider signing up using my referral link. In this way, the portion of the membership fee goes to me, which motivates me to write more exciting stuff on Python and Data Science.')
+
+st.markdown('Also, feel free to subscribe to my free newsletter: Pranjal’s Newsletter.')
 
