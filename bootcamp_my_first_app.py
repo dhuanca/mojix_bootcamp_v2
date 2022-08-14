@@ -3,19 +3,15 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-
-
 st.title('10 Cool Beginner Python Tricks That Will Make Your Life Easier')
 
 image = Image.open('imagen.jpeg')
 st.image(image, caption='Photo by Miesha Maiden from Pexels')
-
 st.markdown('The compactness of Python can make a developer’s life a lot easier when writing lines and lines of code. But there are some lesser-known Python tricks that can surprise you with their amazing capabilities.')
 st.markdown('In today’s article, I will discuss 10 Python tips and tricks that will be really helpful for beginners to write more compact code. Knowing these tips and tricks will definitely save you some valuable time.')
 
 
-# texto_csv = pd.read_csv("text_csv.csv", sep =';')
-
+# Funcion que iprime el texto explicativo de cada tip
 
 def imprime_texto(header_text, mar_text, code_text, code_text_output):
     st.header(header_text)
@@ -26,9 +22,6 @@ def imprime_texto(header_text, mar_text, code_text, code_text_output):
     st.subheader('Output')
     code = code_text_output
     st.code(code, language='python')
-
-
-
 
 # 1 walrus operator
 header_text = '1. Walrus operator'
@@ -67,12 +60,9 @@ imprime_texto(header_text, mar_text, code_text, code_text_output)
 
 st.markdown('The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.')
 st.subheader('Example')
-
 code = '''students = [“Rajesh”, “kumar”, “Kriti”] \nmarks = [87, 90, 88] \ndictionary = dict(zip(students, marks)) \nprint(dictionary)'''
 st.code(code, language='python')
-
 st.subheader('Output')
-
 code = '''{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}'''
 st.code(code, language='python')
 
@@ -130,4 +120,3 @@ st.markdown('If you liked this article and want to **stay tuned** with more **ex
 st.markdown('Please do consider signing up using my referral link. In this way, the portion of the membership fee goes to me, which motivates me to write more exciting stuff on Python and Data Science.')
 
 st.markdown('Also, feel free to subscribe to my free newsletter: Pranjal’s Newsletter.')
-
