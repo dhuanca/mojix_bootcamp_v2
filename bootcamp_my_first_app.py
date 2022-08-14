@@ -51,6 +51,32 @@ code_text = '''str=”hello world!” \na=str[::-1] \nprint(a)'''
 code_text_output = '''!dlrow olleh'''  
 imprime_texto(header_text, mar_text, code_text, code_text_output)
 
+# 4. Merging two dictionaries
+header_text = '4. Merging two dictionaries'
+mar_text = 'This amazing trick will help you merge two dictionaries with just 1 line of code. We just need to use ** in front of the name of the two dictionaries like below two merge them into a single dictionary:'
+code_text = '''d1 = {“a”: 10, “b”:20} \nd2 = {“c”: 30, “d”:40} \nd3 = {**d1, **d2} \nprint(d3)''' 
+code_text_output = '''{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
+
+# 5. The zip() function
+header_text = '5. The zip() function'
+mar_text = 'The zip() function in python can make your life a lot easier when working with lists and dictionaries. It is used to combine several lists of the same length.'
+code_text = '''colour = [“red”, “yellow”, “green”] \nfruits = [‘apple’, ‘banana’, ‘mango’] \nfor colour, fruits in zip(colour, fruits): \nprint(colour, fruits)''' 
+code_text_output = '''red apple \nyellow banana \ngreen mango'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
+
+# 6. Assigning multiple list values to a variable
+header_text = '6. Assigning multiple list values to a variable'
+mar_text = 'If you want to assign some specific values of a list to a variable and all the remaining values to another variable in a list format, you can use the following technique:'
+code_text = '''mylist = [1,2,3,4,5] \na,*b = mylist \nprint(f”a =”,a) \nprint(f”b =”,b)''' 
+code_text_output = '''a = 1 \nb = [2, 3, 4, 5]'''  
+imprime_texto(header_text, mar_text, code_text, code_text_output)
+
+
+
+
+
+
 
 
 
