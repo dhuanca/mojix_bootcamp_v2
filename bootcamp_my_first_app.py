@@ -102,7 +102,7 @@ code_text = '''from getpass import getpass \npassword = getpass(“password: “
 code_text_output = '''password: **** [abcd] \nWelcome stranger! \nPassword: **** [abdc] \nWrong password '''  
 imprime_texto(header_text, mar_text, code_text, code_text_output)
 
-st.markdown('Here is a book on Python programming that I would definitely recommend for all beginners.')
+st.markdown('Here is <https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922?dchild=1&keywords=automate+the+boring+stuff+with+python&qid=1602697607&sr=8-2&linkCode=sl1&tag=pranjal20-20&linkId=71b2efa5db080e8f74068aebec7d7fb0&language=en_US&ref_=as_li_ss_tl> `a book` on Python programming that I would definitely recommend for all beginners.')
 
 st.header('Conclusion')
 
